@@ -3,7 +3,7 @@
   <form class="ui form">
     <h4 class="ui dividing header">Delete this section : {{@model.name}}</h4>
     <LinkTo class="ui button" @route="section">Cancel</LinkTo>
-    <button class="ui button"{{action 'deleteSection' section}}>Confirm</button>
+    <button class="ui button"{{action 'delete' @model}}>Confirm</button>
   </form>
 </div>
 {{outlet}}

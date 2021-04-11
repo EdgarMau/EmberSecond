@@ -18,10 +18,10 @@ Router.map(function () {
     this.route('products', { path: 'products/:section_id' , function(){
         this.route('addproduct',{path:'addproduct/:section_id'});
       } });
-
     this.route('addproduct');
   });
   this.route('product', function () {
     this.route('addproduct');
   });
+  this.route('myOrders');
 });
