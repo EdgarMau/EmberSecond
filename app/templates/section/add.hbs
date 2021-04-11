@@ -6,9 +6,8 @@
       <label>Name</label>
       <Input type="text" name="first-name" placeholder="Section's name" @value={{@model.name}}/>
     </div>
-
     <LinkTo class="ui button" @route="section">Cancel</LinkTo>
-    <button class="ui button" {{action 'addSection' @model}}>Add</button>
+    <button {{action "save" @model}} class="ui grey button">Save </button>
   </form>
 </div>
 

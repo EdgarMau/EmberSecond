@@ -5,7 +5,6 @@
   <LinkTo @route="board" class="item">Home</LinkTo>
   {{#if this.userAuth.user}}
     <LinkTo class="ui button item" @route="section">Section</LinkTo>
-    <LinkTo class="ui button item" @route="product">Products</LinkTo>
     <div class="right menu">
       <span class="ui item inverted">{{this.userAuth.user.email}}</span>
       <button class="ui item button" {{ action "logout" }}>
