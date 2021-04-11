@@ -1,0 +1,25 @@
+{{page-title "Index"}}
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui green image header">
+      <div class="content">
+        Connexion
+      </div>
+    </h2>
+    <form class="ui inverted form" {{action 'connexion' this.login this.password on='submit'}}>
+      <div class="ui inverted segment">
+        <div class="field">
+          <Input @type="text" @value={{this.login}} name="email" placeholder="E-mail address"/>
+        </div>
+        <div class="field">
+            <Input @type="password" name="password" placeholder="Password" @value={{this.password}}/>
+        </div>
+        <button class="ui fluid green submit button">Login</button>
+      </div>
+
+      <div class="ui error message"></div>
+
+    </form>
+  </div>
+</div>
+{{outlet}}
