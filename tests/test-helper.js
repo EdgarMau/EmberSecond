@@ -1,5 +1,5 @@
-import Application from 'ember-eval/app';
-import config from 'ember-eval/config/environment';
+import Application from 'tds/app';
+import config from 'tds/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';
